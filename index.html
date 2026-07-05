@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Jaecoo Official Center Bali - Premium SUV Experience</title>
+  <title>JAECOO Official Center Bali | Weldy - Sales Advisor</title>
 
-  <!-- GA4 -->
+  <!-- GA4 Tracking -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQWW9YZ7PB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,51 +15,56 @@
     gtag('config', 'G-TQWW9YZ7PB');
   </script>
 
-  <!-- Font Awesome -->
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', Arial, sans-serif;}
-
-    body{
-      background:#070707;
-      color:#fff;
-      line-height:1.6;
-      padding-bottom: 60px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
     }
 
-    a{color:inherit;text-decoration:none;}
+    body {
+      background: #070707;
+      color: #fff;
+      line-height: 1.6;
+      padding-bottom: 70px;
+    }
 
-    /* HERO SECTION - Elevating Prestige */
-    .hero{
-      height:100vh;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-      padding:25px;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-      background:
-      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.95)),
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 25px;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.95)),
       url('https://raw.githubusercontent.com/JaecooBali/JaecooBali/main/Gemini_Generated_Image_wahtxgwahtxgwaht.png');
-
-      background-size:cover;
-      background-position:center;
+      background-size: cover;
+      background-position: center;
     }
 
-    .hero h1{
-      font-size:38px;
-      margin-bottom:12px;
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 12px;
       font-weight: 800;
-      letter-spacing: -1px;
+      letter-spacing: -0.5px;
       text-transform: uppercase;
     }
 
-    .hero p{
-      opacity:0.9;
-      margin-bottom:35px;
-      font-size: 16px;
+    .hero p {
+      opacity: 0.9;
+      margin-bottom: 35px;
+      font-size: 15px;
       letter-spacing: 2px;
       text-transform: uppercase;
       color: #00c853;
@@ -74,12 +79,12 @@
       gap: 12px;
     }
 
-    .btn{
-      padding:16px 24px;
-      border-radius:12px;
-      background:#00c853;
+    .btn {
+      padding: 16px 24px;
+      border-radius: 12px;
+      background: #00c853;
       color: #000;
-      font-weight:bold;
+      font-weight: bold;
       text-align: center;
       font-size: 15px;
       letter-spacing: 0.5px;
@@ -87,8 +92,8 @@
       box-shadow: 0 4px 15px rgba(0,200,83,0.2);
     }
 
-    .btn.secondary{
-      background:rgba(255,255,255,0.05);
+    .btn.secondary {
+      background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.15);
       color: #fff;
       box-shadow: none;
@@ -100,20 +105,19 @@
       opacity: 0.9;
     }
 
-    /* SECTION GENERAL */
-    section{
-      padding:60px 24px;
-      max-width:550px; 
-      margin:auto;
+    /* SECTION STYLE */
+    section {
+      padding: 60px 24px;
+      max-width: 550px;
+      margin: auto;
     }
 
-    h2{
-      text-align:center;
-      margin-bottom:35px;
-      font-size:28px;
+    h2 {
+      text-align: center;
+      margin-bottom: 35px;
+      font-size: 26px;
       font-weight: 800;
       letter-spacing: -0.5px;
-      position: relative;
     }
 
     h2::after {
@@ -126,35 +130,72 @@
       border-radius: 2px;
     }
 
-    /* PREMIUM CARDS (Glassmorphism Style) */
-    .grid{
-      display:flex;
+    .grid {
+      display: flex;
       flex-direction: column;
-      gap:20px;
+      gap: 20px;
     }
 
-    .card{
+    /* PRODUCT CARD */
+    .product-card {
       background: linear-gradient(135deg, #141414 0%, #0f0f0f 100%);
-      padding:24px;
-      border-radius:16px;
+      padding: 24px;
+      border-radius: 16px;
       border: 1px solid #1f1f1f;
-      transition: border 0.3s ease;
+      transition: all 0.3s ease;
+      display: block;
     }
 
-    .card:hover {
+    .product-card:hover {
       border-color: #00c853;
+      transform: translateY(-3px);
     }
 
-    .card h3{
-      margin-bottom:10px;
-      color:#00c853;
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .product-card h3 {
+      color: #00c853;
       font-size: 22px;
       font-weight: 700;
     }
 
-    .card p {
-      color: #bbbbbb;
-      font-size: 15px;
+    .price-tag {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .specs-preview {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 15px;
+      margin: 15px 0;
+      padding-top: 12px;
+      border-top: 1px solid #222;
+      font-size: 13.5px;
+      color: #aaa;
+    }
+
+    .specs-preview span i {
+      color: #00c853;
+      margin-right: 6px;
+      width: 16px;
+      text-align: center;
+    }
+
+    .click-prompt {
+      display: block;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #00c853;
+      font-weight: 600;
+      text-align: right;
     }
 
     /* BENEFITS LIST */
@@ -186,12 +227,12 @@
       font-weight: 600;
     }
 
-    /* PROMO BANNER BOX */
-    .promo{
-      background:#0f0f0f;
-      padding:35px 20px;
-      border-radius:16px;
-      text-align:center;
+    /* PROMO BOX */
+    .promo {
+      background: #0f0f0f;
+      padding: 35px 20px;
+      border-radius: 16px;
+      text-align: center;
       border: 1px dashed #333;
     }
 
@@ -200,19 +241,19 @@
       font-size: 15px;
     }
 
-    .promo img{
-      width:100%;
-      border-radius:12px;
-      margin-top:20px;
+    .promo img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 20px;
       display: block;
     }
 
-    /* FAQ ACCORDION STYLE */
-    .faq-item{
-      background:#121212;
-      padding:20px;
-      margin-bottom:14px;
-      border-radius:12px;
+    /* FAQ ACCORDION */
+    .faq-item {
+      background: #121212;
+      padding: 20px;
+      margin-bottom: 14px;
+      border-radius: 12px;
       border: 1px solid #1a1a1a;
     }
 
@@ -220,7 +261,6 @@
       margin-bottom: 8px;
       font-weight: 700;
       font-size: 16px;
-      color: #fff;
     }
 
     .faq-item span {
@@ -230,11 +270,11 @@
       line-height: 1.5;
     }
 
-    /* CTA FOOTER BOX */
-    .cta{
-      text-align:center;
+    /* CTA FOOTER */
+    .cta {
+      text-align: center;
       background: linear-gradient(to bottom, #070707, #111111);
-      padding:80px 24px;
+      padding: 80px 24px;
       border-top: 1px solid #1a1a1a;
     }
 
@@ -253,25 +293,25 @@
     }
 
     /* FOOTER */
-    footer{
-      text-align:center;
-      padding:40px 20px;
-      background:#000;
-      font-size:13px;
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #000;
+      font-size: 13px;
       color: #555;
       border-top: 1px solid #111;
     }
 
-    /* FLOAT WA BUTTON */
-    .wa-float{
-      position:fixed;
-      bottom:20px;
-      right:20px;
-      background:#25D366;
+    /* FLOATING WA BUTTON */
+    .wa-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
       color: #fff;
-      padding:14px 22px;
-      border-radius:50px;
-      font-weight:bold;
+      padding: 14px 22px;
+      border-radius: 50px;
+      font-weight: bold;
       font-size: 15px;
       box-shadow: 0 4px 20px rgba(37,211,102,0.4);
       display: flex;
@@ -296,7 +336,6 @@
         max-width: 200px;
       }
     }
-
   </style>
 </head>
 
@@ -304,12 +343,12 @@
 
 <!-- HERO SECTION -->
 <div class="hero">
-  <h1>Jaecoo Official Center Bali</h1>
+  <h1>JAECOO Official Center Bali</h1>
   <p>From Classic Beyond Classic</p>
 
   <div class="btn-container">
-    <a class="btn" href="https://wa.me/6281337274241?text=Halo%20Jaecoo%20Bali,%20saya%20tertarik%20dengan%20unit%20Jaecoo.%20Bisa%20minta%20info%20promo%20terbaru?">Minta Brosur & Promo</a>
-    <a class="btn secondary" href="https://wa.me/6281337274241?text=Halo%20Jaecoo%20Bali,%20saya%20ingin%20menjadwalkan%20Premium%20Test%20Drive.">Coba Unit (Test Drive)</a>
+    <a class="btn" href="https://wa.me/6281337274241?text=Halo%20Weldy,%20saya%20tertarik%20dengan%20JAECOO.%20Bisa%20minta%20info%20promo%20terbaru%20OTR%20Bali?">Minta Brosur & Promo</a>
+    <a class="btn secondary" href="https://wa.me/6281337274241?text=Halo%20Weldy,%20saya%20ingin%20menjadwalkan%20Premium%20Test%20Drive%20di%20Bali.">Jadwalkan Test Drive</a>
   </div>
 </div>
 
@@ -317,50 +356,76 @@
 <section>
   <h2>The Excellence of JAECOO</h2>
   <div class="grid">
-
-    <div class="card">
+    <div class="product-card" style="cursor: default;">
       <h3>Premium Masterpiece Design</h3>
-      <p>Kombinasi sempurna estetika klasik dan modernitas. Menghadirkan kabin mewah berkelas, panoramic sunroof luas, dan impresi berkendara yang penuh wibawa.</p>
+      <p>Kombinasi sempurna estetika tangguh dan modernitas. Menghadirkan kabin mewah, panoramic sunroof, kabin senyap, serta impresi berkendara penuh wibawa.</p>
     </div>
-
-    <div class="card">
+    <div class="product-card" style="cursor: default;">
       <h3>Intelligent Futuristic Tech</h3>
-      <p>Dukungan interaktivitas layar masif mutakhir, pandangan tanpa batas melalui kamera 540°, serta perlindungan aktif 17 fitur pintar ADAS demi keselamatan absolut Anda.</p>
+      <p>Dukungan interaktivitas layar masif mutakhir, pandangan tanpa batas melalui kamera 540°, serta perlindungan aktif fitur ADAS pintar untuk keamanan absolut.</p>
     </div>
-
-    <div class="card">
-      <h3>Next-Gen Hybrid & EV Eco-Performance</h3>
-      <p>Menjelajah keindahan Bali dengan performa instan yang superior namun tetap menjaga kelestarian alam berkat efisiensi energi terbaik di kelasnya.</p>
+    <div class="product-card" style="cursor: default;">
+      <h3>Eco-Performance Innovation</h3>
+      <p>Menjelajah keindahan Bali dengan performa instan superior namun tetap selaras menjaga keasrian alam berkat efisiensi energi terbaik di kelasnya.</p>
     </div>
-
-    <div class="card">
-      <h3>Uncompromised Peace of Mind</h3>
-      <p>Dukungan jaminan garansi jangka panjang yang kokoh, gratis biaya servis berkala, dan komitmen layanan purna jual eksklusif yang selalu siap mengawal Anda.</p>
-    </div>
-
   </div>
 </section>
 
-<!-- SECTION 3: LINE UP -->
+<!-- SECTION 3: LINE UP (LINKED TO WA CATALOGS) -->
 <section>
   <h2>The JAECOO Line-Up</h2>
-
   <div class="grid">
 
-    <div class="card">
-      <h3>J5 EV — Urban Future</h3>
-      <p>Ikon mobilitas masa depan yang murni listrik. Mengombinasikan kelincahan manuver di jalanan urban, efisiensi tinggi, dan tampilan berkarakter modern.</p>
-    </div>
+    <!-- J5 EV -->
+    <a href="https://wa.me/p/34279828568299448/6281337274241" target="_blank" class="product-card">
+      <div class="card-header">
+        <h3>J5 EV — Urban Future</h3>
+        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #555; font-size: 14px;"></i>
+      </div>
+      <div class="price-tag">Rp329.900.000 <span style="font-size: 12px; color: #aaa; font-weight: 400;">OTR Bali</span></div>
+      <p>Ikon mobilitas masa depan murni listrik. Mengombinasikan kelincahan manuver urban, efisiensi tinggi, dan tampilan berkarakter modern.</p>
+      <div class="specs-preview">
+        <span><i class="fa-solid fa-bolt"></i>Range ±461 km</span>
+        <span><i class="fa-solid fa-car-battery"></i>Baterai 60,9 kWh</span>
+        <span><i class="fa-solid fa-gauge-high"></i>0–100 km/j ±7.3s</span>
+        <span><i class="fa-solid fa-plug"></i>V2L 3.300W</span>
+      </div>
+      <span class="click-prompt">Lihat Katalog & Spek Lengkap →</span>
+    </a>
 
-    <div class="card">
-      <h3>J7 — Off-Road Adventure</h3>
-      <p>SUV All-Wheel Drive (AWD) & Hybrid tangguh yang dirancang khusus untuk menaklukkan setiap lanskap Bali, mulai dari rute perkotaan hingga perbukitan dengan kenyamanan papan atas.</p>
-    </div>
+    <!-- J7 -->
+    <a href="https://wa.me/p/26501963402723206/6281337274241" target="_blank" class="product-card">
+      <div class="card-header">
+        <h3>J7 — Off-Road Adventure</h3>
+        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #555; font-size: 14px;"></i>
+      </div>
+      <div class="price-tag">Rp540.000.000 <span style="font-size: 12px; color: #aaa; font-weight: 400;">OTR Bali</span></div>
+      <p>SUV Hybrid tangguh yang dirancang khusus untuk menaklukkan setiap lanskap Bali, mulai dari rute perkotaan hingga perbukitan dengan kenyamanan papan atas.</p>
+      <div class="specs-preview">
+        <span><i class="fa-solid fa-road"></i>Range ±1.300 km</span>
+        <span><i class="fa-solid fa-leaf"></i>Mode EV ±90-106 km</span>
+        <span><i class="fa-solid fa-gas-pump"></i>BBM ±20 km/l</span>
+        <span><i class="fa-solid fa-gears"></i>Super Hybrid System</span>
+      </div>
+      <span class="click-prompt">Lihat Katalog & Spek Lengkap →</span>
+    </a>
 
-    <div class="card">
-      <h3>J8 — Luxury Flagship</h3>
-      <p>Puncak kemewahan dan status berkendara. Dilengkapi dengan detail interior kelas satu terbaik, material premium, dan inovasi teknologi tercanggih untuk kenyamanan mutlak Anda.</p>
-    </div>
+    <!-- J8 -->
+    <a href="https://wa.me/p/25879809925021045/6281337274241" target="_blank" class="product-card">
+      <div class="card-header">
+        <h3>J8 — Luxury Flagship</h3>
+        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #555; font-size: 14px;"></i>
+      </div>
+      <div class="price-tag">Rp858.000.000 <span style="font-size: 12px; color: #aaa; font-weight: 400;">OTR Bali</span></div>
+      <p>Puncak kemewahan dan status berkendara. Dilengkapi detail interior premium, teknologi ARDIS AWD pintar, dan performa luar biasa.</p>
+      <div class="specs-preview">
+        <span><i class="fa-solid fa-horse"></i>Tenaga ±530 HP</span>
+        <span><i class="fa-solid fa-road"></i>Range ±1.660 km</span>
+        <span><i class="fa-solid fa-leaf"></i>Mode EV ±180 km</span>
+        <span><i class="fa-solid fa-shield-halved"></i>ARDIS AWD Pintar</span>
+      </div>
+      <span class="click-prompt">Lihat Katalog & Spek Lengkap →</span>
+    </a>
 
   </div>
 </section>
@@ -370,7 +435,6 @@
   <h2>Exclusive Offers</h2>
   <div class="promo">
     <p>Penawaran eksklusif dan promo terbatas bulan ini sedang disiapkan khusus untuk Anda.</p>
-    <!-- Masukkan link gambar promo resmi Anda di src -->
     <img src="https://via.placeholder.com/900x400" alt="Promo JAECOO Bali" onerror="this.style.display='none';">
   </div>
 </section>
@@ -378,26 +442,23 @@
 <!-- SECTION 5: BENEFITS -->
 <section>
   <h2>Exclusive Service Experience</h2>
-
   <div class="benefit-list">
     <div class="benefit-item"><i class="fa-solid fa-id-card-clip"></i> <span>Sales Advisor Resmi JAECOO Bali Terpercaya</span></div>
     <div class="benefit-item"><i class="fa-solid fa-file-invoice-dollar"></i> <span>Simulasi Kredit Fleksibel, Cepat, & Transparan</span></div>
     <div class="benefit-item"><i class="fa-solid fa-arrows-rotate"></i> <span>Kemudahan Tukar Tambah (Trade-In) Segala Merk Mobil</span></div>
-    <div class="benefit-item"><i class="fa-solid fa-location-crosshairs"></i> <span>Layanan Test Drive Fleksibel Langsung ke Rumah Anda</span></div>
+    <div class="benefit-item"><i class="fa-solid fa-location-crosshairs"></i> <span>Layanan Test Drive Praktis Langsung di Lokasi Anda</span></div>
     <div class="benefit-item"><i class="fa-solid fa-bolt"></i> <span>Layanan Fast Response Prioritas via WhatsApp</span></div>
-    <div class="benefit-item"><i class="fa-solid fa-key"></i> <span>Pendampingan Penuh dari Pemesanan hingga Unit Tiba di Garasi</span></div>
+    <div class="benefit-item"><i class="fa-solid fa-key"></i> <span>Pendampingan Penuh hingga Unit Tiba di Garasi Anda</span></div>
   </div>
 </section>
 
 <!-- SECTION 6: SHOWROOM -->
 <section>
   <h2>Visit Our Space</h2>
-
-  <div class="card">
+  <div class="product-card" style="cursor: default;">
     <p style="font-size: 18px; margin-bottom: 8px; font-weight: 700;">JAECOO Bali Official Center</p>
     <p style="color: #aaa; margin-bottom: 6px; font-size: 14.5px;"><i class="fa-solid fa-location-dot" style="color: #00c853; margin-right: 8px;"></i> Jl. Gatot Subroto Barat No.168 C, Kerobokan Kaja, Bali</p>
     <p style="color: #aaa; margin-bottom: 25px; font-size: 14.5px;"><i class="fa-solid fa-clock" style="color: #00c853; margin-right: 8px;"></i> Jam Operasional: 08.30 - 17.00 WITA</p>
-
     <a class="btn" href="https://maps.app.goo.gl/rmT9XaCJUBhr1WCaA?g_st=ic" target="_blank" style="margin: 0; width: 100%; display: block;">Navigasi ke Showroom</a>
   </div>
 </section>
@@ -407,42 +468,40 @@
   <h2>Frequently Asked Questions</h2>
 
   <div class="faq-item">
-    <p>Bagaimana cara mencoba kenyamanan unit JAECOO di Bali?</p>
-    <span>Layanan uji berkendara kami sangat fleksibel. Anda bisa mengunjungi langsung showroom resmi kami atau menghubungi kami untuk menjadwalkan kunjungan unit test drive langsung ke tempat Anda tanpa biaya tambahan.</span>
+    <p>Apakah tersedia layanan test drive di Bali?</p>
+    <span>Ya, unit test drive JAECOO tersedia di Bali. Kami siap menjadwalkan sesi uji berkendara langsung di showroom atau fleksibel dikirim ke lokasi tempat tinggal Anda.</span>
   </div>
   
   <div class="faq-item">
-    <p>Apakah saya bisa melakukan tukar tambah dengan mobil lama saya?</p>
-    <span>Tentu bisa. Kami menyediakan layanan trade-in terintegrasi. Mobil lama Anda dari merk apa pun akan dinilai secara transparan dengan harga kompetitif untuk mempermudah kepemilikan unit JAECOO baru Anda.</span>
+    <p>Apakah saya bisa melakukan tukar tambah (trade-in)?</p>
+    <span>Tentu bisa. Kami menerima penukaran mobil lama Anda dari berbagai merk dengan penilaian harga yang transparan dan kompetitif demi mempermudah kepemilikan unit JAECOO baru Anda.</span>
   </div>
   
   <div class="faq-item">
-    <p>Apakah tersedia program pembiayaan secara kredit?</p>
-    <span>Ya, kami bekerja sama dengan jaringan lembaga pembiayaan terkemuka untuk menawarkan opsi kredit yang disesuaikan dengan profil finansial Anda, mulai dari pilihan uang muka (DP) ringan hingga tenor yang fleksibel.</span>
+    <p>Apakah tersedia program pembelian secara kredit?</p>
+    <span>Ya, kami bekerja sama dengan berbagai mitra pembiayaan (leasing) terpercaya untuk menghadirkan opsi cicilan fleksibel yang disesuaikan dengan rencana finansial Anda.</span>
   </div>
   
   <div class="faq-item">
     <p>Berapa lama estimasi waktu pengiriman unit setelah pemesanan?</p>
-    <span>Untuk unit yang berstatus ready stock, proses pengiriman dilakukan segera setelah penyelesaian administrasi. Sedangkan untuk unit inden, estimasi waktu akan diinformasikan secara transparan sejak awal berdasarkan nomor antrean pemesanan Anda.</span>
+    <span>Waktu pengiriman bervariasi bergantung pada ketersediaan unit pilihan Anda (ready stock atau inden) serta penyelesaian kelengkapan dokumen berkas administrasi.</span>
   </div>
-
 </section>
 
 <!-- CTA SECTION -->
 <div class="cta">
   <h2>Mulai Perjalanan Premium Anda</h2>
-  <p>Konsultasikan kebutuhan mobilitas berkelas Anda bersama sales advisor resmi kami.</p>
-
+  <p>Konsultasikan kebutuhan mobilitas berkelas Anda bersama sales advisor resmi JAECOO.</p>
   <div class="btn-container">
-    <a class="btn" href="https://wa.me/6281337274241?text=Halo%20Jaecoo%20Bali,%20saya%20ingin%20konsultasi%20mengenai%20unit%20terbaru.">Hubungi Sales Advisor</a>
-    <a class="btn secondary" href="https://wa.me/6281337274241?text=Halo%20Jaecoo%20Bali,%20bisa%20bantu%20hitungkan%20simulasi%20kreditnya?">Minta Simulasi Kredit</a>
+    <a class="btn" href="https://wa.me/6281337274241?text=Halo%20Weldy,%20saya%20ingin%20konsultasi%20mengenai%20pembelian%20unit%20JAECOO%20terbaru.">Hubungi Sales Advisor</a>
+    <a class="btn secondary" href="https://wa.me/6281337274241?text=Halo%20Weldy,%20bisa%20bantu%20hitungkan%20simulasi%20kredit%20unit%20JAECOO?">Minta Simulasi Kredit</a>
   </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
   JAECOO Official Center Bali © 2026<br>
-  Exclusive Dealer Network • WhatsApp: 0813-3727-4241
+  Weldy – Sales Advisor JAECOO • WhatsApp: 0813-3727-4241
 </footer>
 
 <!-- FLOAT WA -->
