@@ -10,7 +10,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQWW9YZ7PB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag()){dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-TQWW9YZ7PB');
   </script>
@@ -133,22 +133,33 @@
     .grid {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 25px;
     }
 
-    /* PRODUCT CARD */
+    /* PRODUCT CARD WITH IMAGE */
     .product-card {
       background: linear-gradient(135deg, #141414 0%, #0f0f0f 100%);
-      padding: 24px;
       border-radius: 16px;
       border: 1px solid #1f1f1f;
       transition: all 0.3s ease;
       display: block;
+      overflow: hidden;
     }
 
     .product-card:hover {
       border-color: #00c853;
       transform: translateY(-3px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid #1f1f1f;
+    }
+
+    .card-content {
+      padding: 24px;
     }
 
     .card-header {
@@ -230,7 +241,7 @@
     /* PROMO BOX */
     .promo {
       background: #0f0f0f;
-      padding: 35px 20px;
+      padding: 24px;
       border-radius: 16px;
       text-align: center;
       border: 1px dashed #333;
@@ -239,12 +250,12 @@
     .promo p {
       color: #aaa;
       font-size: 15px;
+      margin-bottom: 20px;
     }
 
     .promo img {
       width: 100%;
       border-radius: 12px;
-      margin-top: 20px;
       display: block;
     }
 
@@ -357,16 +368,22 @@
   <h2>The Excellence of JAECOO</h2>
   <div class="grid">
     <div class="product-card" style="cursor: default;">
-      <h3>Premium Masterpiece Design</h3>
-      <p>Kombinasi sempurna estetika tangguh dan modernitas. Menghadirkan kabin mewah, panoramic sunroof, kabin senyap, serta impresi berkendara penuh wibawa.</p>
+      <div class="card-content">
+        <h3>Premium Masterpiece Design</h3>
+        <p>Kombinasi sempurna estetika tangguh dan modernitas. Menghadirkan kabin mewah, panoramic sunroof, kabin senyap, serta impresi berkendara penuh wibawa.</p>
+      </div>
     </div>
     <div class="product-card" style="cursor: default;">
-      <h3>Intelligent Futuristic Tech</h3>
-      <p>Dukungan interaktivitas layar masif mutakhir, pandangan tanpa batas melalui kamera 540°, serta perlindungan aktif fitur ADAS pintar untuk keamanan absolut.</p>
+      <div class="card-content">
+        <h3>Intelligent Futuristic Tech</h3>
+        <p>Dukungan interaktivitas layar masif mutakhir, pandangan tanpa batas melalui kamera 540°, serta perlindungan aktif fitur ADAS pintar untuk keamanan absolut.</p>
+      </div>
     </div>
     <div class="product-card" style="cursor: default;">
-      <h3>Eco-Performance Innovation</h3>
-      <p>Menjelajah keindahan Bali dengan performa instan superior namun tetap selaras menjaga keasrian alam berkat efisiensi energi terbaik di kelasnya.</p>
+      <div class="card-content">
+        <h3>Eco-Performance Innovation</h3>
+        <p>Menjelajah keindahan Bali dengan performa instan superior namun tetap selaras menjaga keasrian alam berkat efisiensi energi terbaik di kelasnya.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -378,53 +395,62 @@
 
     <!-- J5 EV -->
     <a href="https://wa.me/p/34279828568299448/6281337274241" target="_blank" class="product-card">
-      <div class="card-header">
-        <h3>J5 EV — Urban Future</h3>
-        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #555; font-size: 14px;"></i>
+      <img src="https://raw.githubusercontent.com/JaecooBali/JaecooBali/refs/heads/main/IMG_5004.jpeg" alt="JAECOO J5 EV">
+      <div class="card-content">
+        <div class="card-header">
+          <h3>J5 EV — Urban Future</h3>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="color: #555; font-size: 14px;"></i>
+        </div>
+        <div class="price-tag">Rp329.900.000 <span style="font-size: 12px; color: #aaa; font-weight: 400;">OTR Bali</span></div>
+        <p>Ikon mobilitas masa depan murni listrik. Mengombinasikan kelincahan manuver urban, efisiensi tinggi, dan tampilan berkarakter modern.</p>
+        <div class="specs-preview">
+          <span><i class="fa-solid fa-bolt"></i>Range ±461 km</span>
+          <span><i class="fa-solid fa-car-battery"></i>Baterai 60,9 kWh</span>
+          <span><i class="fa-solid fa-gauge-high"></i>0–100 km/j ±7.3s</span>
+          <span><i class="fa-solid fa-plug"></i>V2L 3.300W</span>
+        </div>
+        <span class="click-prompt">Lihat Katalog & Spek Lengkap →</span>
       </div>
-      <div class="price-tag">Rp329.900.000 <span style="font-size: 12px; color: #aaa; font-weight: 400;">OTR Bali</span></div>
-      <p>Ikon mobilitas masa depan murni listrik. Mengombinasikan kelincahan manuver urban, efisiensi tinggi, dan tampilan berkarakter modern.</p>
-      <div class="specs-preview">
-        <span><i class="fa-solid fa-bolt"></i>Range ±461 km</span>
-        <span><i class="fa-solid fa-car-battery"></i>Baterai 60,9 kWh</span>
-        <span><i class="fa-solid fa-gauge-high"></i>0–100 km/j ±7.3s</span>
-        <span><i class="fa-solid fa-plug"></i>V2L 3.300W</span>
-      </div>
-      <span class="click-prompt">Lihat Katalog & Spek Lengkap →</span>
     </a>
 
     <!-- J7 -->
     <a href="https://wa.me/p/26501963402723206/6281337274241" target="_blank" class="product-card">
-      <div class="card-header">
-        <h3>J7 — Off-Road Adventure</h3>
-        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #555; font-size: 14px;"></i>
+      <img src="https://raw.githubusercontent.com/JaecooBali/JaecooBali/refs/heads/main/IMG_5005.jpeg" alt="JAECOO J7">
+      <div class="card-content">
+        <div class="card-header">
+          <h3>J7 — Off-Road Adventure</h3>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="color: #555; font-size: 14px;"></i>
+        </div>
+        <div class="price-tag">Rp540.000.000 <span style="font-size: 12px; color: #aaa; font-weight: 400;">OTR Bali</span></div>
+        <p>SUV Hybrid tangguh yang dirancang khusus untuk menaklukkan setiap lanskap Bali, mulai dari rute perkotaan hingga perbukitan dengan kenyamanan papan atas.</p>
+        <div class="specs-preview">
+          <span><i class="fa-solid fa-road"></i>Range ±1.300 km</span>
+          <span><i class="fa-solid fa-leaf"></i>Mode EV ±90-106 km</span>
+          <span><i class="fa-solid fa-gas-pump"></i>BBM ±20 km/l</span>
+          <span><i class="fa-solid fa-gears"></i>Super Hybrid System</span>
+        </div>
+        <span class="click-prompt">Lihat Katalog & Spek Lengkap →</span>
       </div>
-      <div class="price-tag">Rp540.000.000 <span style="font-size: 12px; color: #aaa; font-weight: 400;">OTR Bali</span></div>
-      <p>SUV Hybrid tangguh yang dirancang khusus untuk menaklukkan setiap lanskap Bali, mulai dari rute perkotaan hingga perbukitan dengan kenyamanan papan atas.</p>
-      <div class="specs-preview">
-        <span><i class="fa-solid fa-road"></i>Range ±1.300 km</span>
-        <span><i class="fa-solid fa-leaf"></i>Mode EV ±90-106 km</span>
-        <span><i class="fa-solid fa-gas-pump"></i>BBM ±20 km/l</span>
-        <span><i class="fa-solid fa-gears"></i>Super Hybrid System</span>
-      </div>
-      <span class="click-prompt">Lihat Katalog & Spek Lengkap →</span>
     </a>
 
     <!-- J8 -->
     <a href="https://wa.me/p/25879809925021045/6281337274241" target="_blank" class="product-card">
-      <div class="card-header">
-        <h3>J8 — Luxury Flagship</h3>
-        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #555; font-size: 14px;"></i>
+      <img src="https://raw.githubusercontent.com/JaecooBali/JaecooBali/refs/heads/main/IMG_5006.jpeg" alt="JAECOO J8">
+      <div class="card-content">
+        <div class="card-header">
+          <h3>J8 — Luxury Flagship</h3>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="color: #555; font-size: 14px;"></i>
+        </div>
+        <div class="price-tag">Rp858.000.000 <span style="font-size: 12px; color: #aaa; font-weight: 400;">OTR Bali</span></div>
+        <p>Puncak kemewahan dan status berkendara. Dilengkapi detail interior premium, teknologi ARDIS AWD pintar, dan performa luar biasa.</p>
+        <div class="specs-preview">
+          <span><i class="fa-solid fa-horse"></i>Tenaga ±530 HP</span>
+          <span><i class="fa-solid fa-road"></i>Range ±1.660 km</span>
+          <span><i class="fa-solid fa-leaf"></i>Mode EV ±180 km</span>
+          <span><i class="fa-solid fa-shield-halved"></i>ARDIS AWD Pintar</span>
+        </div>
+        <span class="click-prompt">Lihat Katalog & Spek Lengkap →</span>
       </div>
-      <div class="price-tag">Rp858.000.000 <span style="font-size: 12px; color: #aaa; font-weight: 400;">OTR Bali</span></div>
-      <p>Puncak kemewahan dan status berkendara. Dilengkapi detail interior premium, teknologi ARDIS AWD pintar, dan performa luar biasa.</p>
-      <div class="specs-preview">
-        <span><i class="fa-solid fa-horse"></i>Tenaga ±530 HP</span>
-        <span><i class="fa-solid fa-road"></i>Range ±1.660 km</span>
-        <span><i class="fa-solid fa-leaf"></i>Mode EV ±180 km</span>
-        <span><i class="fa-solid fa-shield-halved"></i>ARDIS AWD Pintar</span>
-      </div>
-      <span class="click-prompt">Lihat Katalog & Spek Lengkap →</span>
     </a>
 
   </div>
@@ -434,8 +460,8 @@
 <section>
   <h2>Exclusive Offers</h2>
   <div class="promo">
-    <p>Penawaran eksklusif dan promo terbatas bulan ini sedang disiapkan khusus untuk Anda.</p>
-    <img src="https://via.placeholder.com/900x400" alt="Promo JAECOO Bali" onerror="this.style.display='none';">
+    <p>Manfaatkan penawaran eksklusif dan promo terbatas JAECOO Bali khusus untuk pemesanan bulan ini.</p>
+    <img src="https://raw.githubusercontent.com/JaecooBali/JaecooBali/refs/heads/main/IMG_5015.png" alt="Promo JAECOO Bali">
   </div>
 </section>
 
@@ -456,10 +482,12 @@
 <section>
   <h2>Visit Our Space</h2>
   <div class="product-card" style="cursor: default;">
-    <p style="font-size: 18px; margin-bottom: 8px; font-weight: 700;">JAECOO Bali Official Center</p>
-    <p style="color: #aaa; margin-bottom: 6px; font-size: 14.5px;"><i class="fa-solid fa-location-dot" style="color: #00c853; margin-right: 8px;"></i> Jl. Gatot Subroto Barat No.168 C, Kerobokan Kaja, Bali</p>
-    <p style="color: #aaa; margin-bottom: 25px; font-size: 14.5px;"><i class="fa-solid fa-clock" style="color: #00c853; margin-right: 8px;"></i> Jam Operasional: 08.30 - 17.00 WITA</p>
-    <a class="btn" href="https://maps.app.goo.gl/rmT9XaCJUBhr1WCaA?g_st=ic" target="_blank" style="margin: 0; width: 100%; display: block;">Navigasi ke Showroom</a>
+    <div class="card-content">
+      <p style="font-size: 18px; margin-bottom: 8px; font-weight: 700;">JAECOO Bali Official Center</p>
+      <p style="color: #aaa; margin-bottom: 6px; font-size: 14.5px;"><i class="fa-solid fa-location-dot" style="color: #00c853; margin-right: 8px;"></i> Jl. Gatot Subroto Barat No.168 C, Kerobokan Kaja, Bali</p>
+      <p style="color: #aaa; margin-bottom: 25px; font-size: 14.5px;"><i class="fa-solid fa-clock" style="color: #00c853; margin-right: 8px;"></i> Jam Operasional: 08.30 - 17.00 WITA</p>
+      <a class="btn" href="https://maps.app.goo.gl/rmT9XaCJUBhr1WCaA?g_st=ic" target="_blank" style="margin: 0; width: 100%; display: block;">Navigasi ke Showroom</a>
+    </div>
   </div>
 </section>
 
